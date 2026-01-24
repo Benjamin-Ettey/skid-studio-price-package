@@ -2,6 +2,7 @@
 import React from "react";
 import SplitText from "@/components/SplitText";
 import MotionGraphicsServices from "@/components/MotionGraphicsServices";
+import PhotographyServices from "@/components/PhotographyServices";
 
 const LandingPage = () => {
 
@@ -54,7 +55,7 @@ const LandingPage = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full m-5 mt-12">
 
-            <div className="px-2 justify-center items-center">
+            <div className="px-2 justify-center items-center ">
                 <SplitText
                     text="Skid Studio Price Package"
                     className="text-4xl font-black md:font-bold text-center tracking-tighter mt-[15%] md:text-6xl md:mt-[8%]"
@@ -71,8 +72,8 @@ const LandingPage = () => {
                 />
             </div>
 
-            <div className="font-light text-medium md:max-w-1/2 mb-12 leading-tight tracking-tight font-BricolageGrotesque mt-2 mx-5 px-2 text-center hover:text-gray-200">
-                <p>Explore different prices packages and see what suits you best. Prices are negotiable.</p>
+            <div className="font-light text-medium  md:max-w-1/2 mb-12 leading-tight tracking-tight font-BricolageGrotesque mt-2 mx-5 px-2 text-center hover:text-gray-200">
+                <p>Explore different prices packages and see <span className="flex-nowrap max-w-[50%] md:flex-wrap">what suits you best. Prices are negotiable.</span></p>
             </div>
 
             <div className="font-light bg-white/10 py-2 px-3 border-2 border-white/20 rounded-full text-medium md:max-w-1/2 mb-4 leading-tight tracking-tight font-BricolageGrotesque mt-2 mx-5 text-center">
@@ -156,6 +157,16 @@ const LandingPage = () => {
                 </div>
 
                 <MotionGraphicsServices />
+
+                <div className="flex-col md:flex-row justify-center w-full flex items-center gap-4 mt-20">
+                    <div className="font-light bg-white/10 py-2 px-3 border-2 border-white/20 rounded-full text-medium md:max-w-1/2 mb-4 leading-tight tracking-tight font-BricolageGrotesque mt-2 mx-5 text-center">
+                        <p className="text-sm font-medium">Matriculation Services</p>
+
+                    </div>
+
+                </div>
+                <PhotographyServices/>
+
             </div>
         </div>
     );

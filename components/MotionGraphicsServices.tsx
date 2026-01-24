@@ -1,7 +1,5 @@
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import whatsapplogo from "../assets/images/whatsapp.png"
+
 
 const MotionGraphicsServices = () => {
     const motionBoxes = [
@@ -101,36 +99,7 @@ const MotionGraphicsServices = () => {
                 ))}
             </div>
 
-            {/* FOOTER / CONTACT */}
-            <div className="mt-16 w-full">
-                <div className="flex flex-col md:flex-row items-center justify-center gap-6 bg-white/10 rounded-lg p-6 text-xs">
-                    <p>
-                        <span className="text-white/50">Email:</span>{" "}
-                        helloskidstudio@gmail.com
-                    </p>
 
-                    <span className="hidden md:block text-white/30">|</span>
-
-                    <p>
-                        <span className="text-white/50">Contact:</span> +233-535-587-994
-                    </p>
-
-                    <span className="hidden md:block text-white/30">|</span>
-
-                    <Link
-                        href="https://wa.me/message/UZ126BKGNUKQCI"
-                        target="_blank"
-                        className="hover:scale-105 transition"
-                    >
-                        <Image
-                            src={whatsapplogo}
-                            alt="WhatsApp"
-                            width={28}
-                            height={28}
-                        />
-                    </Link>
-                </div>
-            </div>
         </div>
     );
 };
